@@ -1,0 +1,23 @@
+<div class="form-group">
+    <form enctype = "multipart/form-data" method= "POST">
+        {% csrf_token %}
+        {% for campo in form %}
+        <div class="mb-3">
+        <label for="" class="form-label">{{ campo.label }} </label>
+        <input 
+                type = "{{ campo.fields.widget.input_label }}"
+                class = "form-control" 
+                name = "{{ campo.name }}"
+                id="" 
+                aria-describedby="helpId" 
+                placeholder= "{{ campo.nombre }}"
+                value= "{{ campo.value | default:'' }}"
+        />            
+        </div>    
+        <div class="col-12 help-text"> {{ campo.errors}} </div> 
+        {% endfor %}
+
+    <input name="" id="" class="btn btn-primary" type="submit" value="Enviar">
+        
+    </form>
+</div>
