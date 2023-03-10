@@ -79,8 +79,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'libreria',
         'USER': 'library',
-        'PASSWORD' : 'user-library',
-        'HOST': '74.235.114.16',
+        'PASSWORD' : 'D3n1l$0n',
+        'HOST': '18.228.220.160',
         'PORT': '3306'
     }
 }
